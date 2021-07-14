@@ -10,7 +10,8 @@ which is created via :
 
 
     CREATE SUPERMARKET SLIDER
-=============================================
+    
+    
 USE [IBusinessTest]
 GO
 
@@ -36,7 +37,7 @@ GO
 
 
     CREATE KANBAN MASTER
-=============================================
+    
 
 USE [IBusinessTest]
 GO
