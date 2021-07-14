@@ -8,9 +8,9 @@ This system has 2 table which inclused the KANBAN MASTER and the SUPERMARKET ADD
 
 which is created via : 
 
-============================================================================
-                        CREATE KANBAN SUPERMARKET SLIDER
-============================================================================
+============================================
+    CREATE SUPERMARKET SLIDER
+=============================================
 USE [IBusinessTest]
 GO
 
@@ -34,9 +34,9 @@ CREATE TABLE [dbo].[SUPERMARKET_SLIDER](
 ) ON [PRIMARY]
 GO
 
-============================================================================
-                        CREATE KANBAN MASTER TABLE
-============================================================================
+============================================
+    CREATE KANBAN MASTER
+=============================================
 
 USE [IBusinessTest]
 GO
