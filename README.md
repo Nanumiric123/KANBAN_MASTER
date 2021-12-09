@@ -4,7 +4,7 @@ This is a wharehouse KANBAN printing system that utilises MSSQL and ASPNET MVC.
 System that is current running on is MSSQL Server 2021
 MVC that the system being developed on is ASPNET MVC 5.
 
-This system has 2 table which inclused the KANBAN MASTER and the SUPERMARKET ADDRESS
+This system has 3 table which inclused the KANBAN MASTER, SUPERMARKET LINE CAPACITY and the SUPERMARKET ADDRESS
 
 which is created via : 
 
@@ -75,6 +75,31 @@ CREATE TABLE [dbo].[KANBAN_MASTER](
 	[SUPPLIER] [nvarchar](40) NULL,
 	[REMARKS] [text] NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+CREATE SUPERMARKET LINE CAPACITY 
+
+USE [IBusinessTest]
+GO
+
+/****** Object:  Table [dbo].[SUPERMARKET_LINE_CAPACITY]    Script Date: 09/12/2021 8:14:00 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[SUPERMARKET_LINE_CAPACITY](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[CUSTOMER] [nvarchar](15) NULL,
+	[H0] [nvarchar](4) NULL,
+	[A0] [nvarchar](4) NULL,
+	[MODEL] [nvarchar](70) NULL,
+	[CAPACITY] [int] NULL,
+	[MINUTE_30] [int] NULL,
+	[MINUTE_60] [int] NULL,
+	[MINUTE_90] [int] NULL
+) ON [PRIMARY]
 GO
 
 
